@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #eee;
+}
+
+abbr {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.align-stretch {
+  align-items: stretch;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+.portion {
+  flex: 1;
+}
+
+.main-btn {
+  all: unset;
+  box-sizing: border-box;
+  display: inline-block;
+  background-color: #187cee;
+  color: #fff;
+  padding: 0.4em 1.2em;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+.main-btn:hover {
+  cursor: pointer;
+  background-color: #1070dc;
+  box-shadow: 0 3px 3px grey;
+}
+.main-btn:hover::after {
+  transform: translateX(-50%) scale(1);
+}
+.main-btn:active {
+  background-color: #4897f1;
+  box-shadow: 0 3px 3px #ccc;
+}
+
+.dropdown {
+  position: relative;
+}
+.dropdown .dropdown-menu {
+  position: absolute;
+  background-color: #fff;
+  padding: 1rem;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
+.dropdown input[type=checkbox]:checked + .dropdown-menu {
+  display: block;
+}
+
+#showcase {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: url(https://chipta.railway.uz/assets/img/home-page-winter.jpg) center/cover;
+}
+
+header#main-header {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+}
+header#main-header .container > ul {
+  gap: 2rem;
+}
+header#main-header .container > .dropdown {
+  display: none;
+}
+
+section#search {
+  margin: auto 0;
+}
+section#search .container {
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  padding: 2rem;
+}
+section#search h1 {
+  font-size: 3rem;
+  margin: 1rem 0;
+  color: white;
+}
+section#search p {
+  font-size: 1.2rem;
+  color: white;
+  margin: 1rem 0;
+}
+section#search abbr button {
+  all: unset;
+  color: white;
+}
+section#search form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section#search input {
+  display: inline-block;
+  background-color: #fff;
+  border: none;
+  padding: 0.4em 1.2em;
+  width: 250px;
+  border-radius: 10px;
+}
+section#search ul {
+  color: white;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+section#search .links {
+  margin-top: 2rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+section#search .links a {
+  color: #187cee;
+  display: inline-block;
+  padding: 1em 2em;
+  border-radius: 50px;
+  border: 2px solid #187cee;
+  background: linear-gradient(to right bottom, #fff 50%, #187cee 150%);
+}
+
+main {
+  background: url(https://chipta.railway.uz/assets/my-images/bg.png);
+  min-height: 100vh;
+}
+
+section#cities {
+  padding: 2rem 0;
+}
+section#cities h2 {
+  font-size: 2.5rem;
+}
+section#cities .flex {
+  gap: 1rem;
+  margin-top: 1rem;
+}
+section#cities .card {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url(https://chipta.railway.uz/assets/my-images/samarkand.jpg) center/cover;
+  height: 300px;
+  border-radius: 15px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+section#cities .card h4 {
+  color: white;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 900px;
+  }
+  .flex {
+    flex-wrap: wrap;
+  }
+  section#cities .portion {
+    width: 30%;
+    flex: auto;
+  }
+}
+@media (max-width: 900px) {
+  .container {
+    width: 500px;
+  }
+  header#main-header .container > ul {
+    display: none;
+  }
+  header#main-header .container > .dropdown {
+    display: block;
+  }
+  section#search form {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  section#cities .portion {
+    width: 45%;
+    flex: auto;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+  header#main-header .logo div {
+    display: none;
+  }
+  section#cities .portion {
+    width: 100%;
+    flex: auto;
+  }
+}/*# sourceMappingURL=main.css.map */

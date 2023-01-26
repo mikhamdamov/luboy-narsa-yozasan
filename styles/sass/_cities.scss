@@ -1,0 +1,33 @@
+main {
+  background: url(https://chipta.railway.uz/assets/my-images/bg.png);
+  min-height: 100vh;
+}
+
+section#cities {
+  padding: 2rem 0;
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  .flex {
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .card {
+    background: linear-gradient(to top, rgba(black, 0.4), rgba(black, 0)),
+      url(https://chipta.railway.uz/assets/my-images/samarkand.jpg) center /
+        cover;
+    height: 300px;
+    border-radius: 15px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 1rem;
+
+    h4 {
+      color: white;
+      font-size: 1.2rem;
+    }
+  }
+}

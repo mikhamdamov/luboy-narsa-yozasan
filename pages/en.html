@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../styles/css/minified/main.min.css" />
+    <title>7-dars</title>
+  </head>
+  <body>
+    <div id="showcase">
+      <header id="main-header">
+        <nav class="container flex align-center justify-between">
+          <a href="#" class="flex align-center logo">
+            <img
+              src="https://chipta.railway.uz/assets/img/svg/logo.svg"
+              alt=""
+            />
+            <div>
+              <div>JOINT-STOCK COMPANY</div>
+              <div>O’ZBEKISTON TEMIR YO’LLARI</div>
+            </div>
+          </a>
+          <ul class="flex align-center">
+            <li>
+              <div class="dropdown">
+                <label for="lang-drop">
+                  <img
+                    src="https://chipta.railway.uz/assets/img/svg/en_flag.svg"
+                    alt=""
+                  />
+                  English
+                </label>
+                <input type="checkbox" id="lang-drop" hidden />
+                <div class="dropdown-menu">
+                  <ul>
+                    <li>
+                      <a href="../index.html">
+                        <img
+                          src="https://chipta.railway.uz/assets/img/svg/ru_flag.svg"
+                          alt=""
+                        />
+                        Russian
+                      </a>
+                    </li>
+                    <li>
+                      <a href="./uz.html">
+                        <img
+                          src="https://chipta.railway.uz/assets/img/svg/uz_flag.svg"
+                          alt=""
+                        />
+                        Uzbek
+                      </a>
+                    </li>
+                    <li>
+                      <a href="./en.html">
+                        <img
+                          src="https://chipta.railway.uz/assets/img/svg/en_flag.svg"
+                          alt=""
+                        />
+                        English
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="#"> Order from the old site </a>
+            </li>
+            <li>
+              <a href="#"> Train schedule </a>
+            </li>
+            <li>
+              <a href="#"> Login </a>
+            </li>
+          </ul>
+          <div class="dropdown">
+            <label for="main-menu-drop">
+              <span class="main-btn"><i class="fa-solid fa-bars"></i></span>
+            </label>
+            <input type="checkbox" hidden id="main-menu-drop" />
+            <div class="dropdown-menu">
+              <label for="main-menu-drop">
+                <ul>
+                  <li>
+                    <a href="#"> Заказы со старого сайта </a>
+                  </li>
+                  <li>
+                    <a href="#"> Расписание поездов </a>
+                  </li>
+                  <li>
+                    <a href="#"> Вход </a>
+                  </li>
+                </ul>
+              </label>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <section id="search">
+        <div class="container">
+          <h1>Купить билет</h1>
+          <p>Выберите маршрут и дату, чтобы купить ж/д билет</p>
+          <form action="/buy">
+            <input type="text" />
+            <button type="button" class="main-btn">
+              <i class="fa-solid fa-rotate"></i>
+            </button>
+            <input type="text" />
+            <input type="date" />
+            <abbr title="Указать обратную дату">
+              <button type="button">Указать обратную дату</button>
+            </abbr>
+            <button class="main-btn" type="submit">Найти</button>
+          </form>
+          <ul class="flex justify-center">
+            <li><a href="#">Ташкент</a></li>
+            <li><a href="#">Ташкент</a></li>
+            <li><a href="#">Ташкент</a></li>
+            <li><a href="#">Ташкент</a></li>
+            <li><a href="#">Ташкент</a></li>
+            <li><a href="#">Ташкент</a></li>
+            <li><a href="#">Ташкент</a></li>
+            <li><a href="#">Ташкент</a></li>
+            <li><a href="#">Ташкент</a></li>
+          </ul>
+        </div>
+
+        <div class="links">
+          <a href="tel:1005">Call-center: 1005</a>
+          <a href="tg:jd_answer_bot">Call-center: 1005</a>
+        </div>
+      </section>
+    </div>
+    <main>
+      <section id="cities">
+        <div class="container">
+          <h2>Города Узбекистана</h2>
+          <div class="flex">
+            <div class="portion">
+              <div class="card">
+                <h4>Самарканд</h4>
+              </div>
+            </div>
+            <div class="portion">
+              <div class="card">
+                <h4>Самарканд</h4>
+              </div>
+            </div>
+            <div class="portion">
+              <div class="card">
+                <h4>Самарканд</h4>
+              </div>
+            </div>
+            <div class="portion">
+              <div class="card">
+                <h4>Самарканд</h4>
+              </div>
+            </div>
+            <div class="portion">
+              <div class="card">
+                <h4>Самарканд</h4>
+              </div>
+            </div>
+            <div class="portion">
+              <div class="card">
+                <h4>Самарканд</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- <header id="main-header">
+      <nav class="container flex justify-between align-center">
+        <a href="#">Logo</a>
+        <ul class="flex align-center justify-center">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="./pages/login.html" class="main-btn">Login</a></li>
+        </ul>
+      </nav>
+    </header> -->
+  </body>
+</html>
